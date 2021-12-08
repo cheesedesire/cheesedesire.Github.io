@@ -67,3 +67,30 @@ body{
  .juzhong{
      text-align:center;
  } 
+ .box {
+    width: 800px;
+    margin: 50px auto;
+}
+li {
+    padding: 5px 30px;
+    float: left;
+    width: 115px;
+}
+ul {
+    float: left;
+    list-style: none;
+    text-align:center;
+}
+ul:nth-child(1){
+    color: white;
+    background-color: deepskyblue;
+}
+span {
+    margin-right: 5px;
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+#change1{
+    display: none;
+}
