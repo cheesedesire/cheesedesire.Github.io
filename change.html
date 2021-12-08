@@ -56,14 +56,29 @@
         <b><a href="more.html">更多...</a></b>
     </div>
     <br>
-    <div class="textarea">
-    <b>请输入用户账号密码登录，登录后可对介绍页面进行补充</b><br>
-    <form action="">
+    <div class="juzhong">
+    <b>请输入用户账号密码登录</b><br>
+    <form name="" action="" onsubmit="" method="post">
         <pre>
-    UserName: <input type="text" name="username"><br>
-    Password: <input type="text" name="password">
+    UserName: <input type="text" id="username" value=""><br>
+    Password: <input type="password" id="password" value="">
+    <p>(用户名密码均为123456)</p>
+    <button type="button"  name="denglu" id="denglu">登录</button>
         </pre>
     </form>
+        <!-- <button onclick=><a href="">登录</a></button> -->
    </div>
+   <script>
+    document.getElementById("denglu").addEventListener("click",function(){
+      var username=document.getElementById("username").value;
+      var password=document.getElementById("password").value;
+      if(username=="123456"&&password=="123456"){
+          window.location.href="appraise.html";
+      }
+      else{
+          alert("抱歉，用户名或密码错误！");
+      }
+    });
+    </script>
 </body>
 </html>
