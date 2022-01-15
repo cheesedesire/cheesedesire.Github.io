@@ -3,7 +3,6 @@
     <head>
         <link rel="stylesheet" href="..\css\setting.css">
         <meta charset='utf-8'>
-        <meta http-equiv="x-ua-compatible" content="IE=7,9,10">
         <title>Welcome to RiderWorld</title>
     </head>
 
@@ -14,7 +13,7 @@
     </div>
 
     <div class="topnav">
-        <b><a href="index.html">首页</a></b>
+        <b><a href="../index.html">首页</a></b>
         <b><a href="history.html">历史介绍</a></b>
         <b><a href="list.html">列表清单</a></b>
         <b><a href="riderintroduction.html">剧情简介</a></b>
@@ -23,17 +22,17 @@
     </div>
 
     <div class="textarea">
-        <form action="" method="post">
+        <form action="" method="post" onSubmit="return beforeSubmit(this);" submit="">
             <h3>1.你的大名：</h3>
-                <input type="text" name="name">
+                <input type="text" name="name" value="">
 
             <h3>2.你是：</h3>
-                <input type="radio" name="sex" value="GG">GG<br>
+                <input type="radio" name="sex" value="GG" checked="checked">GG<br>
                 <input type="radio" name="sex" value="MM">MM<br>
 
             <h3>3.选择你想成为的骑士：</h3>
               <select name="begin"> 
-                  <option name="favorite" value="Kuuga">Kuuga</option> 
+                  <option name="favorite" value="Kuuga" checked="checked">Kuuga</option> 
                   <option name="favorite" value="Agito">Agito</option>
                   <option name="favorite" value="Ryuki">Ryuki</option>
                   <option name="favorite" value="Faiz">Faiz</option>
@@ -45,7 +44,7 @@
               </select> 
             
             <h3>4.选择你的伙伴：</h3>
-                <input type="checkbox" name="like" value="Kuuga">Kuuga<br>
+                <input type="checkbox" name="like" value="Kuuga" checked="checked">Kuuga<br>
                 <input type="checkbox" name="like" value="Agito">Agito<br>
                 <input type="checkbox" name="like" value="Ryuki">Ryuki<br>
                 <input type="checkbox" name="like" value="Faiz">Faiz<br>
@@ -58,7 +57,8 @@
             <h3>5.你可以随意发表一些评论：</h3>
                 <textarea name="comment" id="comment" cols="40" rows="10"></textarea>
             <br>
-         <input type="submit" value="提交">
+
+         <input type="submit" id="submit" value="提交">
 
         </form>
 
@@ -80,4 +80,13 @@
 
 
 </body>
+
+<script>
+    function beforeSubmit(form){ 
+    if(form.name.value==''){
+    alert('您的名字不能为空噢');
+    return false;
+} 
+}
+    </script>
 </html>
