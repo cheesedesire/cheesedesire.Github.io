@@ -1,0 +1,29 @@
+
+
+ul{
+    width:500px;
+    height:1000px;
+    padding:0;
+    background-color: lightblue;
+    text-align: center;
+    font-size: 0;
+    line-height: 300px;
+    margin:0 auto 30px;
+}
+li{
+    list-style: none;
+    width:6px;
+    height:6px;
+    display:inline-block;
+    vertical-align:middle;
+    background-image:url(../picture/logo.png);
+}
+.logo1{background-position:0px 0px;}
+.logo2{background-position:-24px -6px;}
+.logo3{background-position:0px -12px;}
+.logo4{background-position:-6px 0px;}
+.logo5{background-position:-12px 0px;}
+.logo6{background-position:-18px 0px;}
+.logo7{background-position:-24px 0px;}
+.logo8{background-position:0px -6px;}
+.logo9{background-position:-6px -6px;}

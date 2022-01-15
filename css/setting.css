@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "webfont";
+  font-display: swap;
+  src: url('webfont.eot'); /* IE9 */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('webfont.woff2') format('woff2'),
+  url('webfont.woff') format('woff'), /* chrome、firefox */
+  url('webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+
+.web-font {
+  font-family: "webfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+    margin:0;
+    background-image:linear-gradient(top, beige,skyblue);  
+    background-image:-webkit-linear-gradient(top, beige,skyblue);
+    background-image:-moz-linear-gradient(top, beige,skyblue);
+    background-image:-o-linear-gradient(top, beige,skyblue);
+    background-image:linear-gradient(top, beige,skyblue); 
+ }
+ .topnav{
+     overflow:hidden;
+     background-color:#f03f3f ;
+ }
+ .topnav a{
+    float:left;
+    display:block;
+    color:#f2f2f2;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration: none;
+ }
+ .topnav a:hover{
+     background-color: #ddd;
+     color:black;
+ }
+ .column{
+     float:left;
+     width:32%;
+     padding:5px;
+ }
+ .row:after{
+     content:" ";
+     display:table;
+     clear:both;
+ }
+ @media screen and (max-width:800px){
+     .column{
+         width:100%;
+     }
+     
+ }
+ @media screen and (max-width:2000px){
+     body{
+         background-color: lightgrey;
+     }
+     
+ }
+ .textarea{
+     width:1000px;
+     margin:3% 15%;
+     color:#606975;
+     border:solid 2px;
+ }
+ .menu{
+     float:right;
+     position: fixed;
+     right: 20px;
+     top: 200px;
+     background-color: skyblue;
+ }
+ .juzhong{
+     text-align:center;
+ } 
+
+ .box {
+    width: 800px;
+    margin: 50px auto;
+}
+/* li {
+    padding: 5px 30px;
+    float: left;
+    width: 115px;
+}
+ul {
+    float: left;
+    list-style: none;
+    text-align:center;
+}
+ul:nth-child(1){
+    color: white;
+    background-color: deepskyblue;
+} */
+
+#change1{
+    display: none;
+}
+
+/* 动画 */
+@keyframes example {
+    0%   {left:0px; top:400px;}
+
+
+
+    100% {left:0px; top:0px;}
+  }
+  
+  /* 从下往上出现动画 */
+ .bottomtotop {
+    position: relative;
+    
+    animation-name: example;
+    animation-duration: 2s;
+  }
+  

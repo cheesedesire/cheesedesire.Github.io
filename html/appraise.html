@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="..\css\setting.css">
+        <script type="text/javascript" src="../js/appraise.js"></script>
+        <meta charset='utf-8'>
+        <title>Welcome to RiderWorld</title>
+       
+        <style>
+            li {
+             padding: 5px 30px;
+             float: left;
+             width: 115px;
+            }
+            ul {
+             float: left;
+             list-style: none;
+             text-align:center;
+            }
+            ul:nth-child(1){
+             color: white;
+             background-color: deepskyblue;
+            }
+        </style>
+
+        
+    </head>
+
+
+<body bgcolor="beige" onload="appraise()">
+    <div class="header">
+        <div class="juzhong"><h2>欢迎</h2>
+        <p>这里是假面骑士粉的天堂。</p></div>
+    </div>
+    <div class="topnav">
+        <b><a href="index.html">首页</a></b>
+        <b><a href="history.html">历史介绍</a></b>
+        <b><a href="list.html">列表清单</a></b>
+        <b><a href="riderintroduction.html">剧情简介</a></b>
+        <b><a href="change.html">讨论区</a></b>
+        <b><a href="more.html">更多...</a></b>
+    </div>
+    <div class="box">
+         <div class="juzhong">
+             请选择想要查询的骑士
+             <select name="" id="pri">
+                  <option selected>--请选择--</option>
+                  <option>空我(Kuuga)</option>
+                  <option>帝骑(Decade)</option>
+                  <option>双骑(W)</option>
+                  <option>亚极陀(Agito)</option>
+                  <option>龙骑(Ryuki)</option>
+                  <option>555(Faiz)</option>
+                  <option>剑(Blade)</option>
+                  <option>响鬼(Hibiki)</option>
+                  <option>甲斗王(Kabuto)</option>
+             </select>
+             <button id="search">查询</button>
+         </div>
+         <div class="juzhong">
+             评价：<input type="text" id="more1">
+             骑士名：<select name="" id="more2">
+                <option selected>--请选择--</option>
+                <option>空我(Kuuga)</option>
+                <option>帝骑(Decade)</option>
+                <option>双骑(W)</option>
+                <option>亚极陀(Agito)</option>
+                <option>龙骑(Ryuki)</option>
+                <option>555(Faiz)</option>
+                <option>剑(Blade)</option>
+                <option>响鬼(Hibiki)</option>
+                <option>甲斗王(Kabuto)</option>
+           </select>
+           <button id="more">新增</button>
+         </div>
+         <div class="juzhong" id="box3">
+            <ul>
+                <li>序号</li>
+                <li>评价</li>
+                <li>骑士名</li>
+                <li>操作</li>
+            </ul>
+            <ul>
+                <li>1</li>
+                <li>点赞狂魔</li>
+                <li class="ser">空我(Kuuga)</li>
+                <li>
+                    <span class="change2">修改</span>
+					<span class="del">删除</span>
+                </li>
+            </ul>
+            <ul>
+                <li>2</li>
+                <li>除了拍照啥都会</li>
+                <li class="ser">帝骑(Decade)</li>
+                <li>
+                    <span class="change2">修改</span>
+					<span class="del">删除</span>
+                </li>
+            </ul>
+            <ul>
+                <li>3</li>
+                <li>半吊子侦探</li>
+                <li class="ser">双骑(W)</li>
+                <li>
+                    <span class="change2">修改</span>
+					<span class="del">删除</span>
+                </li>
+            </ul>
+            <ul>
+                <li>4</li>
+                <li>中二少年</li>
+                <li class="ser">亚极陀(Agito)</li>
+                <li>
+                    <span class="change2">修改</span>
+					<span class="del">删除</span>
+                </li>
+            </ul>
+            <ul id="change1">
+				<li></li>
+				<li><input type="text" id="change1-1"/></li>
+				<li class="ser"><input type="text" id="change1-2"/></li>
+				<li>
+					<span id="sure">确定</span>
+					<span id="cancel">取消</span>
+				</li>
+			</ul>
+         </div>
+    </div>
+
+
+    <!-- <script type="text/javascript">
+
+    </script> -->
+    
+</body>
+</html>
